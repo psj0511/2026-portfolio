@@ -921,7 +921,7 @@ a{color:inherit;text-decoration:none}
 </style>
 <div class="loader" id="loader"></div>
 
-<header class="gut"><div class="wrap top"><div class="logo">RESUME <span class="amp">&amp;</span> PORTFOLIO</div><a class="pdfbtn" id="pdfBtn" href="#" data-pdf="" aria-label="포트폴리오 PDF 다운로드"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 11l5 5 5-5M5 20h14"/></svg>PDF 다운로드</a></div></header>
+<header class="gut"><div class="wrap top"><div class="logo">RESUME <span class="amp">&amp;</span> PORTFOLIO</div><a class="pdfbtn" id="pdfBtn" href="portfolio.pdf" download="portfolio.pdf" type="application/pdf" aria-label="포트폴리오 PDF 다운로드"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 11l5 5 5-5M5 20h14"/></svg>PDF 다운로드</a></div></header>
 
 <main class="gut"><div class="wrap stage">
   <div>
@@ -3258,13 +3258,6 @@ details.sh:hover{border-color:var(--fg)}
 .tile:hover .ti-n,.tile:focus-visible .ti-n{color:#FF6F61}
 .tile:hover .ti-ar,.tile:focus-visible .ti-ar{background:#FF6F61;color:#fff}
 </style>
-<script>
-document.getElementById("pdfBtn")&&document.getElementById("pdfBtn").addEventListener("click",function(e){
-  var u=this.getAttribute("data-pdf");
-  if(!u){e.preventDefault();return;} // PDF 링크 전달 전: data-pdf 에 URL을 넣으면 활성화
-  this.href=u;this.target="_blank";this.rel="noopener";
-});
-</script>
 <script>(function(){
   /* 장표 이미지 크게 보기 */
   var lb=null,last=null;
